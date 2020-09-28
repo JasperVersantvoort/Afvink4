@@ -53,7 +53,7 @@ public class Paarden_race extends JFrame implements ActionListener {
         Graphics tekenveld = panel.getGraphics();
         tekenveld.drawLine(250, 50, 250, 250);
         //tekenveld.drawRect(50,100,p1.getAfstand(),20);
-        while (p1.getAfstand()<200 || p2.getAfstand()<200){
+        while (p1.getAfstand()<200 && p2.getAfstand()<200){
             p1.loop();
             p2.loop();
             tekenveld.drawRect(50, 100, p1.getAfstand(), 20);
