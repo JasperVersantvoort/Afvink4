@@ -1,3 +1,5 @@
+package Paarden;
+
 /**
  * Paard class
  *
@@ -30,10 +32,10 @@ public class Paard {
     }
 
     /* Constructor voor Paard overloaded*/
-    Paard(String naam, Color kleur, Image plaatje) {
+    Paard(String naam, Color kleur) {
         this (naam);
         this.kleur = kleur;
-        this.plaatje = plaatje;
+        //this.plaatje = plaatje;
     }
 
     public String getNaam() {
@@ -52,9 +54,9 @@ public class Paard {
         return this.kleur;
     }
 
-    public Image getImage() {
-        return this.plaatje;
-    }
+//    public Image getImage() {
+//        return this.plaatje;
+//    }
 
     /**
      * Laat het paard een willekeurig aantal posities lopen
@@ -64,4 +66,6 @@ public class Paard {
         this.x = this.x + random.nextInt(11);
         System.out.println(this.naam + " is op positie " +this.x);
     }
+
 }
+
